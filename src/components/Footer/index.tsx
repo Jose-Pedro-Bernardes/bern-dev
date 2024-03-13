@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer id="Redes">
       <section>
         <figure>
           <Image src="/images/logo/logoFooter" alt="" width={50} height={41} />
