@@ -25,20 +25,22 @@ export default function Header() {
     <>
       {!menuOpen ? (
         <header
-          className={`flex items-center h-24 fixed top-0 left-0 w-full z-10 px-[30px] transition-all duration-300 ease-in-out ${
+          className={`flex items-center h-24 fixed top-0 left-0 w-full z-10 px-[30px] ${
             isAtTop ? 'bg-transparent text-white' : 'bg-white text-black'
           }`}
         >
           <nav className="container mx-auto flex justify-between items-center py-4">
-            <figure>
-              <Image
-                src="/images/logo/bn.svg"
-                alt="Logotipo da marca escrito BN"
-                width={50}
-                height={41}
-                className={!isAtTop ? 'invert-[.80]' : ''}
-              />
-            </figure>
+            <a href="/" target="_self">
+              <figure>
+                <Image
+                  src="/images/logo/bn.svg"
+                  alt="Logotipo da marca escrito BN"
+                  width={50}
+                  height={41}
+                  className={!isAtTop ? 'invert-[.80]' : ''}
+                />
+              </figure>
+            </a>
             <button onClick={() => toggleBooleanState(setMenuOpen)}>
               <Image
                 src="/images/assets/menu.svg"
@@ -56,5 +58,3 @@ export default function Header() {
     </>
   )
 }
-
-export {}
