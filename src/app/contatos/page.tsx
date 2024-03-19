@@ -1,5 +1,7 @@
 export default function Contatos() {
   return (
-    <main></main>
+    <main>
+      <h1>contatos</h1>
+    </main>
   )
 }

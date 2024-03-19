@@ -1,5 +1,7 @@
 export default function Sobre() {
   return (
-    <main></main>
+    <main>
+      <h1>sobre</h1>
+    </main>
   )
 }
