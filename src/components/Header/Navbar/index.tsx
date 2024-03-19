@@ -1,13 +1,42 @@
+import toggleBooleanState from '@/helper/toggleBooleanState'
+import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { Dispatch, SetStateAction } from 'react'
 
-export default function Navbar() {
+interface IPROP {
+  setMenuOpen: Dispatch<SetStateAction<boolean>>
+}
+
+export default function Navbar({ setMenuOpen }: IPROP) {
   return (
-    <nav>
-      <Link href="home">Home</Link>
-      <Link href="sobre">Sobre</Link>
-      <Link href="contatos">Contatos</Link>
-      <Link href="#Redes">Redes</Link>
-    </nav>
+    <>
+      <header>
+        <figure>
+          <Image
+            src="/images/logo/bn.svg"
+            alt="Logotipo da marca escrito BN"
+            width={50}
+            height={41}
+            className="invert-[.80]"
+          />
+        </figure>
+        <Image
+          src="/images/logo/bn.svg"
+          alt="Logotipo da marca escrito BN"
+          width={50}
+          height={41}
+          className="invert-[.80]"
+        />
+        <figure></figure>
+      </header>
+      <nav>
+        <Link href="home">Home</Link>
+        <Link href="sobre">Sobre</Link>
+        <Link href="contatos">Contatos</Link>
+        <Link onClick={() => toggleBooleanState(setMenuOpen)} href="#Redes">
+          Redes
+        </Link>
+      </nav>
+    </>
   )
 }
