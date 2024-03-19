@@ -1,6 +1,5 @@
 import toggleBooleanState from '@/helper/toggleBooleanState'
 import Image from 'next/image'
-import Link from 'next/link'
 import React, { Dispatch, SetStateAction } from 'react'
 
 interface IPROP {
@@ -35,55 +34,71 @@ export default function Navbar({ setMenuOpen }: IPROP) {
       </header>
       <nav className="flex flex-col bg-[#EEEEEE]">
         <div className="flex gap-5 items-center box-border pl-[30px] h-[96px] border-solid border-b-[1px] border-[#B5B5B5]">
-          <Image
-            src="/images/assets/navbar/home.svg"
-            alt=""
-            width={25}
-            height={25}
-            className="invert-[.10]"
-          />
-          <Link href="home">Home</Link>
-        </div>
-        <div className="flex gap-5 items-center box-border pl-[30px] h-[96px] border-solid border-b-[1px] border-[#B5B5B5]">
-          <Image
-            src="/images/assets/navbar/sobre.svg"
-            alt=""
-            width={25}
-            height={25}
-            className="invert-[.10]"
-          />
-          <Link href="sobre">Sobre</Link>
-        </div>
-        <div className="flex gap-5 items-center box-border pl-[30px] h-[96px] border-solid border-b-[1px] border-[#B5B5B5]">
-          <Image
-            src="/images/assets/navbar/contatos.svg"
-            alt=""
-            width={25}
-            height={25}
-            className="invert-[.10]"
-          />
-          <Link href="contatos">Contatos</Link>
-        </div>
-        <div className="flex gap-5 items-center box-border pl-[30px] h-[96px] border-solid border-b-[1px] border-[#B5B5B5]">
-          <Image
-            src="/images/assets/navbar/redes.svg"
-            alt=""
-            width={25}
-            height={25}
-            className="invert-[.10]"
-          />
-          <Link
+          <a
+            href="/"
             onClick={() => toggleBooleanState(setMenuOpen)}
-            href="#Redes"
-            target="_parent"
+            className="flex gap-5 items-center"
           >
-            Redes
-          </Link>
+            <Image
+              src="/images/assets/navbar/home.svg"
+              alt=""
+              width={25}
+              height={25}
+              className="invert-[.10]"
+            />
+            <p>Home</p>
+          </a>
         </div>
-        <div className="flex justify-center items-center h-[135px] text-[#2187BF] font-bold">
-          <button className="flex justify-center items-center w-[151px] h-[45px] bg-transparent border-solid border-[1px] border-[#2187BF] rounded-[17px]">
+        <div className="flex gap-5 items-center box-border pl-[30px] h-[96px] border-solid border-b-[1px] border-[#B5B5B5]">
+          <a href="sobre" className="flex gap-5 items-center">
+            <Image
+              src="/images/assets/navbar/sobre.svg"
+              alt=""
+              width={25}
+              height={25}
+              className="invert-[.10]"
+            />
+            <p>Sobre</p>
+          </a>
+        </div>
+        <div className="flex gap-5 items-center box-border pl-[30px] h-[96px] border-solid border-b-[1px] border-[#B5B5B5]">
+          <a href="contatos" className="flex gap-5 items-center">
+            <Image
+              src="/images/assets/navbar/contatos.svg"
+              alt=""
+              width={25}
+              height={25}
+              className="invert-[.10]"
+            />
+            <p>Contatos</p>
+          </a>
+        </div>
+        <div className="flex gap-5 items-center box-border pl-[30px] h-[96px] border-solid border-b-[1px] border-[#B5B5B5]">
+          <a
+            href="#Redes"
+            onClick={() => toggleBooleanState(setMenuOpen)}
+            target="_parent"
+            className="flex gap-5 items-center"
+          >
+            <Image
+              src="/images/assets/navbar/redes.svg"
+              alt=""
+              width={25}
+              height={25}
+              className="invert-[.10]"
+            />
+            <p>Redes</p>
+          </a>
+        </div>
+
+        <div className="flex justify-center items-center h-[135px]">
+          <a
+            href="/contatos"
+            target="_parent"
+            className="flex justify-center items-center w-[151px] h-[45px] bg-transparent border-solid border-[1px] border-[#2187BF] text-[#2187BF] font-bold rounded-[17px]"
+          >
             Comece hoje
-          </button>
+          </a>
         </div>
       </nav>
     </nav>
