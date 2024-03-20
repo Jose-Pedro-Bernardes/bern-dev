@@ -8,7 +8,7 @@ interface IPROP {
 
 export default function Navbar({ setMenuOpen }: IPROP) {
   return (
-    <nav className="mb-[40px]">
+    <nav className="mb-[40px] lg:hidden">
       <header className="flex items-center justify-between px-[30px] bg-white h-[101px]">
         <a href="/" target="_self">
           <figure>
