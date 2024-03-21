@@ -52,7 +52,6 @@ export default function Header() {
                 alt=""
                 width={34}
                 height={34}
-                className={!isAtTop ? 'invert-[.80]' : ''}
               />
             </button>
             <nav className="hidden lg:flex h-full items-end gap-[60px] font-normal  text-[0.875rem] xl:gap-[94px] xl:text-[1rem]">
