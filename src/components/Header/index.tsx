@@ -54,7 +54,7 @@ export default function Header() {
                 height={34}
               />
             </button>
-            <nav className="hidden lg:flex h-full items-end gap-[60px] font-normal  text-[0.875rem] xl:gap-[94px] xl:text-[1rem]">
+            <nav className="hidden lg:flex h-full items-end gap-[60px] font-normal  text-[1rem] xl:gap-[94px] xl:text-[1rem]">
               <Link
                 className="transition-transform duration-200 ease-in-out hover:scale-125 hover:font-medium hover:text-[#96d9ff]"
                 href={'/'}
