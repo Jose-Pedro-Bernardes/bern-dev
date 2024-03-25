@@ -26,10 +26,10 @@ export default function Header() {
     <>
       {!menuOpen ? (
         <header
-          className={`flex items-center h-24 fixed top-0 left-0 w-full z-10 px-[30px] transition-all duration-500 ease-in-out ${
+          className={`flex items-center h-24 fixed top-0 left-0 w-full z-20 px-[30px] transition-all duration-500 ease-in-out ${
             isAtTop
               ? 'bg-transparent text-white'
-              : 'bg-[rgb(255,255,255,40%)] text-[#ffffff]'
+              : 'bg-[rgb(39,39,39)] text-[#ffffff]'
           }`}
         >
           <nav className="container mx-auto flex justify-between items-center py-4 lg:px-[6%]">
