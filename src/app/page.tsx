@@ -34,7 +34,7 @@ export default function Home() {
         <nav className="flex w-[140px] justify-between sm:w-[200px]">
           <a href="#">
             <Image
-              src="/images/assets/firstSection/whatsapp.svg"
+              src="/images/assets/firstSection/whatsappicon.svg"
               alt=""
               width={35}
               height={35}
