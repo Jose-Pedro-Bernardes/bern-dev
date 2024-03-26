@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <main className="mt-[130px] w-full px-[30px]">
-      <section className="flex flex-col items-center bg-[#050505] w-full  rounded-[30px] p-[25px] box-border relative">
+      <section className="flex flex-col items-center bg-[#050505] w-full  rounded-[30px] px-[25px] py-[30px] box-border relative">
         <div className="flex flex-col items-center">
           <h1 className="text-white font-shippori text-center text-[20px] z-10 relative smm:text-[22px]">
             DESENVOLVEDOR E WEBDESIGNER
@@ -14,30 +14,31 @@ export default function Home() {
               alt=""
               width={219}
               height={282}
-              className="opacity-90 smm:w-[280px] h-[340px]"
+              className="opacity-90 smm:w-[280px] h-[340px] sm:w-[330px] sm:h-[390px]"
             />
           </figure>
-          <p className="text-[#D6D6D6] max-w-full w-[238px] text-center mt-[250px] mb-[30px] text-[12px] relative smm:mt-[270px]">
+          <p className="text-[#D6D6D6] max-w-full w-[238px] text-center mt-[250px] mb-[30px] text-[12px] relative smm:mt-[270px] sm:mt-[340px] sm:text-[14px] sm:w-[370px]">
             Como desenvolvedor web, meu foco está em criar sites que não só
             impressionam, mas impulsionam o seu negócio para novos horizontes
             online.
           </p>
         </div>
         <div className="flex gap-[13px] mb-[30px]">
-          <button className="text-white w-[93px] h-[34px] border-solid border-[1px] border-white bg-transparent text-[12px] rounded-[17px] font-bold">
+          <button className="text-white w-[93px] h-[34px] border-solid border-[1px] border-white bg-transparent text-[12px] rounded-[17px] font-bold sm:w-[150px] sm:h-[45px] sm:text-[14px]">
             Sobre mim
           </button>
-          <button className="w-[93px] h-[34px] bg-white border-solid border-[1px] border-white text-[12px] rounded-[17px] font-bold">
+          <button className="w-[93px] h-[34px] bg-white border-solid border-[1px] border-white text-[12px] rounded-[17px] font-bold sm:w-[150px] sm:h-[45px] sm:text-[14px]">
             Começar
           </button>
         </div>
-        <nav className="flex w-[140px] justify-between mb-[10px]">
+        <nav className="flex w-[140px] justify-between sm:w-[200px]">
           <a href="#">
             <Image
               src="/images/assets/firstSection/whatsapp.svg"
               alt=""
               width={35}
               height={35}
+              className="sm:w-[40px] h-[40px]"
             />
           </a>
           <a href="#">
@@ -46,6 +47,7 @@ export default function Home() {
               alt=""
               width={35}
               height={35}
+              className="sm:w-[40px] h-[40px]"
             />
           </a>
           <a href="#">
@@ -54,6 +56,7 @@ export default function Home() {
               alt=""
               width={35}
               height={35}
+              className="sm:w-[40px] h-[40px]"
             />
           </a>
         </nav>
